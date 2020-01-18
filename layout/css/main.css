@@ -25,5 +25,7 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: red !important;
+    color: #007f92 !important;
+    font-weight: bolder;
+    border-bottom: 4px solid black;
 }
