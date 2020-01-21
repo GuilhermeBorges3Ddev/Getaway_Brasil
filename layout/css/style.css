@@ -16,6 +16,7 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
+  --getaway: #007f92;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #78d5ef;
@@ -63,6 +64,10 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff; }
+
+  .bg-getaway{
+   background-color: var(--getaway);
+  }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
