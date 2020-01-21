@@ -1,81 +1,753 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
     <title>Bem vindo a Getaway!</title>
-    <!-- CSS do Bootstrap 4.4.2 -->
-    <link rel="stylesheet" href="./layout/css/bootstrap.min.css">
-     <!-- CSS com o padrão criado -->
-     <link rel="stylesheet" href="./layout/css/main.css">
-  </head>
-  <body style="background-color: #007f92;">
-
-  <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-          <img src="./layout/img/minoLogo.png" width="95" height="95" alt="getaway_logo"/>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto px-3">
-          <li class="nav-item active">
-            <a class="nav-link mx-4" href="#">
-              Home 
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-4" href="./layout/pages/about.html">
-              Sobre
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link mx-4" href="#">
-              Eventos
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-4" href="#">
-              Fotos
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-4" href="#">
-              Blog
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-4" href="#">
-              Destinos
-            </a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-4" type="search" placeholder="Digite sua busca aqui" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
-      </div>
-    </nav>
-  <!-- Fim da Navbar -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
 
-    <h1 class="d-flex justify-content-center align-items-center mt-2">
-      Seja bem vindo
-    </h1>
-    <!-- Teste do JS com CSS locais -->
-    <div class="card d-flex mx-auto mt-5" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <link rel="stylesheet" href="./layout/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="./layout/css/animate.css">
+    
+    <link rel="stylesheet" href="./layout/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./layout/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./layout/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="./layout/css/aos.css">
+
+    <link rel="stylesheet" href="./layout/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="./layout/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./layout/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="./layout/css/flaticon.css">
+    <link rel="stylesheet" href="./layout/css/icomoon.css">
+    <link rel="stylesheet" href="./layout/css/style.css">
+  </head>
+  <body>
+	
+  <!-- BEGIN of navbar -->	
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+		<img src="./layout/images/minoLogo.png" width="95" height="95" alt="getaway_logo"/>
+	  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+			  <a href="./index.html" class="nav-link">
+				Home
+			  </a>
+		  </li>
+		  <li class="nav-item">
+			  <a href="./layout/pages/about.html" class="nav-link">
+				Sobre
+			  </a>
+		 </li>
+          <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Fotos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Destinos</a></li>
+          <!--<li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Add listing</span></a></li>-->
+        </ul>
       </div>
     </div>
-     <!-- Inserção local do JS do popper, jquery e do bts4.4.2, nesta ordem-->
-     <script src="./layout/js/jquery-3.4.1.min.js"></script>
-     <script src="./layout/js/popper.min.js"></script>
-     <script src="./layout/js/bootstrap.min.js"></script>
+  </nav>
+  <!-- END of navbar -->
+  
+  <!-- BEGIN of search section -->
+    <div class="hero-wrap js-fullheight" style="background-image: url('./layout/images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-10 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Getaway <br></strong> sua agência de viagem online.</h1>
+            <p><b>Agregamos sua experiência com alguns serviços:</b></p>
+            <p class="browse d-md-flex">
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-fork"></i>Restaurantes</a></span>
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-hotel"></i>Hotéis</a></span> 
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-meeting-point"></i>Pontos Turísticos</a></span> 
+            	<span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i class="flaticon-shopping-bag"></i>Rota de Compras</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+	</div>
+   <!-- END of search section -->
+
+   <!-- BEGIN of 4 cards-lead -->
+    <section class="ftco-section services-section bg-light">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img class="flaticon-guarantee" src="./layout/fonts/flaticon/font/money.svg" height="70px" width="70px"></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Melhores preços</h3>
+                <p>O custo-benefício da Getaway é imbatível, e o melhor: tudo em um só lugar. Você só precisa navegar pela plataforma!</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-like"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Memória emocional</h3>
+                <p>Seja nosso parceiro escrevendo sua experiência, assim outras pessoas podem viver suas emoções.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-detective"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Agencie sua experiência</h3>
+                <p>Possuimos profissionais preparados para conciliar seu passeio com os serviços mais adequados.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-support"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Suporte virtual</h3>
+                <p>Você pode nos procurar via email ou por meio de uma das nossas redes sociais, que estão listadas ao fim desta página.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+	</section>
+	<!-- END of 4 cards-lead -->
+
+	<!-- BEGIN of our-routes -->
+	<section class="ftco-section bg-getaway">
+    	<div class="container">
+				<div class="row justify-content-start mb-5 pb-3 text-white">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">Ofertas Especiais</span>
+            <h2 class="mb-4 text-white">
+				<strong>Nossos Destinos</strong>
+			</h2>
+          </div>
+        </div>    		
+    	</div>
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/noronha.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Fernando de Noronha</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<span>22 votos</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price"><small>01/01/2020</small></span>
+    							</div>
+    						</div>
+    						<p>Noronha abriga centenas espécies de peixes e a grande maioria está presente na Praia do Sueste, conheça de perto essa maravilha da natureza.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Pernambuco, PE </span> 
+    							<span class="ml-auto"><a href="#">Ver Mais</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/lencoisMaranhenses.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Lençóis Maranhenses</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>18 votos</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price"><small>-/-/2020</small></span>
+    							</div>
+    						</div>
+    						<p>Explore o que há de mais exótico, conhecendo as tribos locais, a emoção de um 4x4 e o conforto de quem irá preparar tudo nos mínimos detalhes.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Maranhão, MA</span> 
+    							<span class="ml-auto"><a href="#">Ver Mais</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/ilhaGrande.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Ilha Grande</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>17 votos</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price"><small>-/-/2020</small></span>
+    							</div>
+    						</div>
+    						<p>Queremos trazer esse ambiente de festa e exploração da natureza a bordo de um catamarã, que já é tão tradicional no mar mediterrâneo!</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Rio de Janeiro, RJ</span> 
+    							<span class="ml-auto"><a href="#">Ver Mais</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/chapadaDiamantina.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Chapada Diamantina</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<span>20 votos</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price"><small>-/-/2020</small></span>
+    							</div>
+    						</div>
+    						<p>Conheça belas paisagens e viva uma aventura pelas cidades do entorno da chapada, passando pelo Vale do Pati, o trekking mais bonito do Brasil! </p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Bahia, BA</span> 
+    							<span class="ml-auto"><a href="#">Ver Mais</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			
+    		</div>
+    	</div>
+	</section>
+	<!-- END of our-routes -->
+	
+	
+	<!-- BEGIN of partner-routes -->
+    <section class="ftco-section ftco-destination">
+    	<div class="container">
+    		<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">
+				  Indicações
+			</span>
+            <h2 class="mb-4">
+				<strong>Roteiros de Viajantes Parceiros</strong>
+			</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="destination-slider owl-carousel ftco-animate">
+    					<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/ouroPreto.jpeg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Ouro Preto, MG</a></h3>
+		    						<span class="listing">15 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/petropolis.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Petrópolis, RJ</a></h3>
+		    						<span class="listing">20 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/cristoRio.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Rio de Janeiro, RJ</a></h3>
+		    						<span class="listing">10 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/camposSP.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Campos do Jordão, SP</a></h3>
+		    						<span class="listing">3 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/carnavalBA.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Salvador, BA</a></h3>
+		    						<span class="listing">302 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+		    				<div class="destination">
+		    					<a href="#" class="img d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/amazoniaAM.jpeg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+		    							<span class="icon-search2"></span>
+		    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<h3><a href="#">Manaus, AM</a></h3>
+		    						<span class="listing">100 Depoimentos</span>
+		    					</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+	<!-- END of partner-routes -->
+
+
+	<!-- BEGIN of marketplace -->
+    <section class="ftco-section bg-golden">
+    	<div class="container">
+				<div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+          	<span class="subheading">Ofertas especiais</span>
+            <h2 class="mb-4"><strong>Marketplace:</strong> Serviços &amp; Experiências</h2>
+          </div>
+        </div>    		
+    	</div>
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/diamantinaHotel.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Hotel Diamantina Palace</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>253 opiniões</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price per-price">R$137<br><small>/diária</small></span>
+    							</div>
+    						</div>
+    						<p>Localizado a 2 km do Museu do Diamante e próximo do Parque Estadual do Biribiri.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Chapada Diamantina, BA</span> 
+    							<span class="ml-auto"><a href="#">Comprar</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/ilhaSul.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Restaurante Ilha Sul</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>476 opiniões</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price per-price">R$220<br><small>/refeição</small></span>
+    							</div>
+    						</div>
+    						<p>Restaurante especializado em frutos do mar, bom cardápio e próximo da praia.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Ilhabela, SP</span> 
+    							<span class="ml-auto"><a href="#">Comprar</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/barcoChapada.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Passeio de barco</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star-o"></i>
+		    							<span>84 opiniões</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price per-price">R$50<br><small>/ingresso</small></span>
+    							</div>
+    						</div>
+    						<p>Navegue e se exercite remando por cerca de três horas para completar o percurso.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Chapada Diamantina, BA</span> 
+    							<span class="ml-auto"><a href="#">Comprar</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/mergulhoNoronha.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Mergulho em Noronha</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<span>2 opiniões</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price per-price">R$1100<br><small>/pessoa</small></span>
+    							</div>
+    						</div>
+    						<p>Perceba o quanto as águas límpidas de Noronha tem a oferecer.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Fernando de Noronha, PE</span> 
+    							<span class="ml-auto"><a href="#">Comprar</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm col-md-6 col-lg ftco-animate">
+    				<div class="destination">
+    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./layout/images/hotel-5.jpg);">
+    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+    					</a>
+    					<div class="text p-3">
+    						<div class="d-flex">
+    							<div class="one">
+		    						<h3><a href="#">Buggy nos lençóis</a></h3>
+		    						<p class="rate">
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<i class="icon-star"></i>
+		    							<span>1109 opiniões</span>
+		    						</p>
+	    						</div>
+	    						<div class="two">
+	    							<span class="price per-price">R$560<br><small>/assento</small></span>
+    							</div>
+    						</div>
+    						<p>Percorra a região costeira e atravesse dunas em um passeio muito divertido.</p>
+    						<hr>
+    						<p class="bottom-area d-flex">
+    							<span><i class="icon-map-o"></i> Lençóis Maranhenses, MA</span> 
+    							<span class="ml-auto"><a href="#">Comprar</a></span>
+    						</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <!-- END of marketplace -->
+
+    
+
+	<!-- BEGIN of blogspace -->
+    <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row justify-content-start mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate">
+            <span class="subheading">Experiências relatadas</span>
+            <h2>
+				<strong>Relatos dos blogueiros</strong>
+			</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('./layout/images/casalNoronha.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+              	<span class="tag">#casais #praia</span>
+                <h3 class="heading mt-3"><a href="#">8 melhores programas para casais em Noronha</a></h3>
+                <div class="meta mb-3">
+                  <div><a href="#">Dezembro, 2019</a></div>
+                  <br />
+                  <div><a href="#" class="meta-chat"><span class="icon-chat m-1"></span>@gabicavalcantec</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('./layout/images/expedicoesMaranhao.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">#aventura #exploração</span>
+                <h3 class="heading mt-3"><a href="#">Expedições exóticas nos lençóis Maranhenses</a></h3>
+                <div class="meta mb-3">
+					<div><a href="#">Junho, 2016</a></div>
+					<br />
+					<div><a href="#" class="meta-chat"><span class="icon-chat m-1"></span>@desertStorm</a></div>
+				</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('./layout/images/barNoronha.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">#alimentacao #bares</span>
+                <h3 class="heading mt-3"><a href="#">Os melhores bares e quiosques de Noronha</a></h3>
+                <div class="meta mb-3">
+					<div><a href="#">Dezembro, 2019</a></div>
+					<br />
+					<div><a href="#" class="meta-chat"><span class="icon-chat m-1"></span>@barDoMeio</a></div>
+				</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('./layout/images/escaladaChapada.jpg');">
+              </a>
+              <div class="text p-4">
+              	<span class="tag">#esportes #escalada</span>
+                <h3 class="heading mt-3"><a href="#">Melhores picos de escalada na Chapada Diamantina</a></h3>
+                <div class="meta mb-3">
+					<div><a href="#">Janeiro, 2017</a></div>
+					<br />
+					<div><a href="#" class="meta-chat"><span class="icon-chat m-1"></span>@mattheus</a></div>
+				</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+	<!-- END of blogspace -->
+	
+	<!-- BEGIN of subscribe -->
+	<section class="ftco-section-parallax">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8 text-center heading-section heading-section-white ftco-animate">
+              <h2>Inscreva-se para receber novidades</h2>
+              <p>Digite seu email e clique em --><u>Notifique-me</u><--</p>
+              <div class="row d-flex justify-content-center mt-5">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Entre com o seu email">
+                      <input type="submit" value="Notifique-me" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+	<!-- END of subscribe -->
+
+	<!-- BEGIN of Footer -->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Getaway</h2>
+              <p>Mais do que viagens e uma equipe de profissionais preparados para lhe servir, somos vendedores de experiências e realizadores de sonhos.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Guia Rápido</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">Sobre</a></li>
+                <li><a href="#" class="py-2 d-block">Eventos</a></li>
+                <li><a href="#" class="py-2 d-block">Fotos</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Destinos</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Quer falar conosco?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Belo Horizonte, Brasil</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(31) 98853-5567</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">rafaeldardot@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+  				Getaway Brasil &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados.
+  			</p>
+          </div>
+        </div>
+      </div>
+	</footer>
+	<!-- BEGIN of Footer -->
+    
+  
+
+   <!-- Pre Loader  -->
+   <div id="ftco-loader" class="show fullscreen">
+	    <svg class="circular" width="48px" height="48px">
+		  <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+		  <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+		</svg>
+   </div>
+
+
+  <script src="./layout/js/jquery.min.js"></script>
+  <script src="./layout/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="./layout/js/popper.min.js"></script>
+  <script src="./layout/js/bootstrap.min.js"></script>
+  <script src="./layout/js/jquery.easing.1.3.js"></script>
+  <script src="./layout/js/jquery.waypoints.min.js"></script>
+  <script src="./layout/js/jquery.stellar.min.js"></script>
+  <script src="./layout/js/owl.carousel.min.js"></script>
+  <script src="./layout/js/jquery.magnific-popup.min.js"></script>
+  <script src="./layout/js/aos.js"></script>
+  <script src="./layout/js/jquery.animateNumber.min.js"></script>
+  <script src="./layout/js/bootstrap-datepicker.js"></script>
+  <script src="./layout/js/jquery.timepicker.min.js"></script>
+  <script src="./layout/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="./layout/js/google-map.js"></script>
+  <script src="./layout/js/main.js"></script>
+    
   </body>
 </html>
