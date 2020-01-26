@@ -31,7 +31,7 @@
             	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-fork"></i>Restaurant</a></span>
             	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-hotel"></i>Hotel</a></span> 
             	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-meeting-point"></i>Places</a></span> 
-            	<span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i class="flaticon-shopping-bag"></i>Shopping</a></span>
+            	<span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-shopping-bag"></i>Shopping</a></span>
             </p>
           </div>
         </div>
@@ -162,3 +162,59 @@
     	</div>
     </section>
     <!-- END of special-offers -->
+
+
+	<!-- BEGIN of h1-message section had these 4 gutters -->
+	 	<p><b>Agregamos sua experiência com alguns serviços:</b></p>
+        <p class="browse d-md-flex">
+            <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-fork"></i>Restaurantes</a></span>
+            <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-hotel"></i>Hotéis</a></span> 
+            <span class="d-flex justify-content-md-center align-items-md-center"><a href="#"><i class="flaticon-meeting-point"></i>Pontos Turísticos</a></span> 
+            <span class="d-flex justify-content-md-center align-items-md-	center"><a href="#"><i class="flaticon-shopping-bag"></i>Rota de Compras</a></span>
+        </p>
+	<!-- END of h1-message section had these 4 gutters -->
+
+	<!-- BEGIN of the old 4 cards-lead section -->
+    <section class="ftco-section services-section bg-light">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><img class="flaticon-guarantee" src="./structure/source/files/fonts/flaticon/font/money.svg" height="70px" width="70px"></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Melhores preços</h3>
+                <p>O custo-benefício da Getaway é imbatível, e o melhor: tudo em um só lugar. Você só precisa navegar pela plataforma!</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-like"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Memória emocional</h3>
+                <p>Seja nosso parceiro escrevendo sua experiência, assim outras pessoas podem viver suas emoções.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-detective"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Agencie sua experiência</h3>
+                <p>Possuimos profissionais preparados para conciliar seu passeio com os serviços mais adequados.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="d-flex justify-content-center"><div class="icon"><span class="flaticon-support"></span></div></div>
+              <div class="media-body p-2 mt-2">
+                <h3 class="heading mb-3">Suporte virtual</h3>
+                <p>Você pode nos procurar via email ou por meio de uma das nossas redes sociais, que estão listadas ao fim desta página.</p>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>
+	</section>
+	<!-- END of the old 4 cards-lead section -->

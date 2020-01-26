@@ -24,6 +24,10 @@
     border: 0;
 }
 
+.marketplace {
+    height: 550px !important;
+}
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #007f92 !important;
     font-weight: bolder;
