@@ -218,3 +218,22 @@
       </div>
 	</section>
 	<!-- END of the old 4 cards-lead section -->
+
+
+
+	<!-- BEGIN of carrousel-destination section -->
+    <section class="ftco-section ftco-destination">
+    	<div class="container">
+    		<div class="row justify-content-start mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate">
+					<span class="subheading">
+						Depoimentos
+					</span>
+					<h2 class="mb-4">
+						<strong>Veja mais sobre estes incríveis depoimentos</strong>
+					</h2>
+				</div>
+        	</div>
+    	</div>
+    </section>
+	<!-- END of carrousel-destination section -->
