@@ -103,18 +103,18 @@
           </div>
           <div class="row block-9">
             <div class="col-md-12 pr-md-5">
-              <form action="#">
+              <form role="form" action="../controller/sender.php" method="POST">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Digite seu nome">
+                  <input name="name" required="required" type="text" class="form-control" placeholder="Digite seu nome">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Entre com seu email">
+                  <input name="email" required="required" type="email" class="form-control" placeholder="Entre com seu email">
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Assunto">
+                  <input name="subject" required="required" type="text" class="form-control" placeholder="Assunto">
                 </div>
                 <div class="form-group">
-                  <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Escreva aqui sua mensagem..."></textarea>
+                  <textarea name="message" required="required" cols="30" rows="7" class="form-control" placeholder="Escreva aqui sua mensagem..."></textarea>
                 </div>
                 <div class="form-group">
                   <input type="submit" value="Enviar Mensagem" class="btn btn-primary py-3 px-5">
