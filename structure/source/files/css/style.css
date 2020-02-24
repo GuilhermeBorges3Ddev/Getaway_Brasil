@@ -3191,6 +3191,9 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
+  background-color: none !important;
+  color: none !important;
+  cursor: pointer !important;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
