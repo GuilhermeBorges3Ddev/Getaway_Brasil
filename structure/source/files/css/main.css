@@ -63,3 +63,9 @@
     border-radius: 3px;
 }
     
+@media screen and (min-width: 1000px) {
+    .bigtext-neverwrap {
+      width: 750px !important;
+      white-space: nowrap;
+    }
+  }
