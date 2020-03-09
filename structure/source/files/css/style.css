@@ -4174,6 +4174,12 @@ input[type="button"].btn-block {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite; }
 
+.marketplace-description {
+  width: 100%;
+  max-lines: 2 !important;
+  display: inline-block !important;
+}
+
 .marketplace-title {
   text-overflow: ellipsis !important;
 }
