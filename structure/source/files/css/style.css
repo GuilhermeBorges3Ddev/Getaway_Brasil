@@ -4200,7 +4200,8 @@ input[type="button"].btn-block {
 .media-body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  cursor: pointer !important;}
 
 .list-group {
   display: -webkit-box;
@@ -8183,13 +8184,14 @@ textarea.form-control {
   visibility: hidden;
 }
 
+.clickable {
+  cursor:  pointer !important}
+
 .route {
-  height: 510px !important;
-}
+  height: 510px !important;}
 
 .text-routes {
-  text-overflow: ellipsis;
-}
+  text-overflow: ellipsis;}
 
 .bg-primary {
   background: #f85959 !important; }
