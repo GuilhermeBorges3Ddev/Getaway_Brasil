@@ -4174,6 +4174,21 @@ input[type="button"].btn-block {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite; }
 
+.marketplace-description {
+  width: 100%;
+  max-lines: 2 !important;
+  display: inline-block !important;
+}
+
+.marketplace-title {
+  text-overflow: ellipsis !important;
+}
+
+.marketplace-location {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7807,7 +7822,8 @@ h1, h2, h3, h4, h5,
       padding-left: 5px;
       font-size: 10px; }
     .destination .text .one {
-      width: calc(100% - 70px); }
+      width: 100%;
+      text-overflow: ellipsis; }
     .destination .text .two {
       width: 70px;
       text-align: right; }
@@ -8169,6 +8185,10 @@ textarea.form-control {
 
 .route {
   height: 510px !important;
+}
+
+.text-routes {
+  text-overflow: ellipsis;
 }
 
 .bg-primary {
