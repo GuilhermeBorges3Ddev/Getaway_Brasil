@@ -5,6 +5,10 @@
     height: 100px;
 }
 
+/* .bottom-menu {
+    bottom: 0 !important;
+} */
+
 #lead-destination, #lead-blogger, #lead-marketplaces{
     cursor: pointer !important;
 }
