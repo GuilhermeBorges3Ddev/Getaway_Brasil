@@ -8184,13 +8184,14 @@ textarea.form-control {
   visibility: hidden;
 }
 
+.clickable {
+  cursor:  pointer !important}
+
 .route {
-  height: 510px !important;
-}
+  height: 510px !important;}
 
 .text-routes {
-  text-overflow: ellipsis;
-}
+  text-overflow: ellipsis;}
 
 .bg-primary {
   background: #f85959 !important; }
