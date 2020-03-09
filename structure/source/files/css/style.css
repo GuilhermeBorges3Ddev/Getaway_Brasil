@@ -4174,6 +4174,11 @@ input[type="button"].btn-block {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite; }
 
+.marketplace-location {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
