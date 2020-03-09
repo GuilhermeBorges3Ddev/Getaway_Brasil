@@ -5,6 +5,10 @@
     height: 100px;
 }
 
+#lead-destination{
+    cursor: pointer !important;
+}
+
 .logo {
     display: block;
     height: auto;
