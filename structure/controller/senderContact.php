@@ -1,5 +1,5 @@
 <?php
-    $for = 'reservas@getawaybrasil.com.br';
+    $for = 'gsilvaborges@gmail.com';
     $subject = $_POST['subject'];
 
     // Contact form fields
