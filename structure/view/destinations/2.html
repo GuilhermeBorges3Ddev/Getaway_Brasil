@@ -136,7 +136,7 @@
 					<form action="#">
 						<div class="fields">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Digite seu nome">
+								<input name="name" required="required" type="text" class="form-control" placeholder="Digite seu nome">
 							</div>
 							<div class="form-group">
 								<div class="select-wrap one-third">
@@ -147,14 +147,14 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<input type="mail" class="form-control" placeholder="exemplo@mail.com">
+								<input name="mail" required="required" type="mail" class="form-control" placeholder="exemplo@mail.com">
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="(xx) 9 9999-9999">
+								<input name="phone" required="required" type="text" class="form-control" placeholder="(xx) 9 9999-9999">
 							</div>
 							<div class="form-group">
 								<label for="data_partida">Selecione uma data de partida</label>
-								<select class="form-control" id="data_partida">
+								<select name="datetravel" required="required" class="form-control" id="data_partida">
 								  <option>23/06/2020</option>
 								  <option>29/08/2020</option>
 								  <option>07/11/2020</option>
@@ -162,7 +162,7 @@
 							</div>
 							<div class="form-group">
 								<label for="exampleFormControlSelect1">Quantidade de acompanhantes:</label>
-								<select class="form-control" id="exampleFormControlSelect1">
+								<select name="accompany" required="required" class="form-control" id="exampleFormControlSelect1">
 								  <option>0</option>
 								  <option>1</option>
 								  <option>2</option>
@@ -177,11 +177,11 @@
 								</select>
 							</div>
 							<div class="form-group form-check">
-								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<input name="withChildren" required="required" type="checkbox" type="checkbox" class="form-check-input" id="exampleCheck1">
 								<label class="form-check-label" for="exampleCheck1"><b>Incluir criança</b></label>
 							</div>
 							<div class="form-group">
-								<button type="button" data-toggle="modal" data-target="#enquireModalTwo" class="btn btn-primary py-3 px-5">
+								<button type="submit" data-toggle="modal" data-target="#enquireModalTwo" class="btn btn-primary py-3 px-5">
 									Enviar solicitação
 								</button>
 							</div>
@@ -286,6 +286,8 @@
   <script src="../../source/files/js/google-map.js"></script>
   <script src="../../source/files/js/main.js"></script>
   <script src="../../controller/whatsapp_message.js"></script>
+  <script src="../../controller/stopReload.js"></script>
+  <script src="../../controller/senderEnquire.php"></script>
     
   </body>
 </html>
