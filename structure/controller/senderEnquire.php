@@ -1,15 +1,24 @@
 <?php
-    $for = 'reservas@getawaybrasil.com.br';
+    $for = 'gsilvaborges@gmail.com';
     $subject = $_POST['subject'];
 
-    // Contact form fields
+    // Contact form fields --> reservas@getawaybrasil.com.br
         $name = $_POST['name'];
         $mail = $_POST['email'];
-        $message = $_POST['message'];
+        $phone = $_POST['phone'];
+        $datetravel = $_POST['datetravel'];
+        $accompany = $_POST['accompany'];
+        $withChildren = $_POST['withChildren'];
 
     // Mount body message with these fields
         $body = "<html><body>";
-        $body .= "Nome: $name <br \> Email: $mail <br \>   Mensagem: $message";
+        $body .= "Nome: $name <br \> 
+                  Email: $mail <br \>   
+                  Telefone: $phone <br \>
+                  Data de embarque: $datetravel <br \>
+                  Número de acompanhantes: $accompany <br \>
+                  Inclui criança(true para sim e false para não): $withChildren <br \>
+                ";
         $body .= "</body></html>";
 
     // Mail header
@@ -26,3 +35,4 @@
         echo "<script>alert('$msg');window.location.assign('https://getawaybrasil.com.br/');</script>";
     }
 ?>
+
