@@ -1,13 +1,25 @@
+#destinationsLinksArea {
+    margin-top: 10%;
+    width: 100% !important;
+    justify-content: start !important;
+    align-self: flex-start;
+    margin-right: auto !important;
+}
+
+.destination-links {
+    cursor: pointer !important;
+}
+
+.destination-links:hover {
+    opacity: 0.8;
+}
+
 .navbar {
     border: 0;
     z-index: 9999;
     font-size: 18px;
     height: 100px;
 }
-
-/* .bottom-menu {
-    bottom: 0 !important;
-} */
 
 #lead-destination, #lead-blogger, #lead-marketplaces{
     cursor: pointer !important;
