@@ -5,11 +5,12 @@
     // Contact form fields
         $name = $_POST['name'];
         $mail = $_POST['email'];
+        $phone = $_POST['phone'];
         $message = $_POST['message'];
 
     // Mount body message with these fields
         $body = "<html><body>";
-        $body .= "Nome: $name <br \> Email: $mail <br \>   Mensagem: $message";
+        $body .= "Nome: $name <br /> Email: $mail <br /> Telefone: $phone <br /> Mensagem: $message";
         $body .= "</body></html>";
 
     // Mail header
