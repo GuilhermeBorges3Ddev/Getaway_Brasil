@@ -22,7 +22,7 @@
 }
 
 .navbar li a, .navbar {
-    color: black !important;
+    color: black;
     font-size: 18px;
     transition: all 0.6s 0s;
 }
@@ -40,6 +40,10 @@
     color: #007f92 !important;
     font-weight: bolder;
     border-bottom: 4px solid black;
+}
+
+#routerDestiniesBg {
+    background-image: linear-gradient(to bottom right, black, #007f92);
 }
 
 .imglist ul{
