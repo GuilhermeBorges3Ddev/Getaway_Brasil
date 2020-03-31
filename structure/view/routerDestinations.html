@@ -56,15 +56,9 @@
           </a>
         </li>
         <li class="nav-item active dropdown">
-          <a href="../../index.html#destination" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+          <a href="../../index.html#destination" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
             Nossos destinos
           </a>
-          <div class="dropdown-menu bottom-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item clickable" onclick ="location.href='./destinations/1.html'">Fernando de Noronha</a>
-            <a class="dropdown-item clickable" onclick ="location.href='./destinations/2.html'">Lençóis Maranhenses</a>
-            <a class="dropdown-item clickable" onclick ="location.href='./destinations/3.html'">Ilha Grande</a>
-            <a class="dropdown-item clickable" onclick ="location.href='./destinations/4.html'">Chapada Diamantina</a>
-          </div>
         </li>
         <li class="nav-item">
           <a href="../../index.html#blogger" class="nav-link">
@@ -98,9 +92,11 @@
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-9 text-center ftco-animate pt-4" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mt-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Nossos Destinos</h1>
+            
+            <!-- BEGIN of Destinies menu to link with routes in destinations/ -->
             <div class="row" id="destinationsLinksArea">
                 <div class="col-12 text-white my-2">
-                    <div class="alert alert-dark destination-links" role="alert">
+                    <div class="alert alert-dark destination-links" role="alert" onclick="location.href ='./destinations/1.html'">
                         <span class="destination-links-logo">
                             <img src="../source/files/images/chevrons-right.svg" alt="Go to destiny">
                         </span>
@@ -108,7 +104,7 @@
                             Fernando de Noronha
                         </span>
                     </div>
-                    <div class="alert alert-dark destination-links" role="alert">
+                    <div class="alert alert-dark destination-links" role="alert" onclick="location.href ='./destinations/2.html'">
                         <span class="destination-links-logo">
                             <img src="../source/files/images/chevrons-right.svg" alt="Go to destiny">
                         </span>
@@ -116,7 +112,7 @@
                             Lençóis Maranhenses
                         </span>
                     </div>
-                    <div class="alert alert-dark destination-links" role="alert">
+                    <div class="alert alert-dark destination-links" role="alert" onclick="location.href ='./destinations/3.html'">
                         <span class="destination-links-logo">
                             <img src="../source/files/images/chevrons-right.svg" alt="Go to destiny">
                         </span>
@@ -124,7 +120,7 @@
                             Ilha Grande
                         </span>
                     </div>
-                    <div class="alert alert-dark destination-links" role="alert">
+                    <div class="alert alert-dark destination-links" role="alert" onclick="location.href ='./destinations/4.html'">
                         <span class="destination-links-logo">
                             <img src="../source/files/images/chevrons-right.svg" alt="Go to destiny">
                         </span>
@@ -133,7 +129,9 @@
                         </span>
                     </div>
                 </div>
-            </div>   
+            </div> 
+            <!-- END of Destinies menu to link with routes in destinations/ -->
+
          </div>
         </div>
       </div>
