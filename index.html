@@ -27,7 +27,8 @@
 
     
     <link rel="stylesheet" href="./structure/source/files/css/flaticon.css">
-    <link rel="stylesheet" href="./structure/source/files/css/icomoon.css">
+	<link rel="stylesheet" href="./structure/source/files/css/icomoon.css">
+	<link rel="stylesheet" href="./structure/source/files/css/main.css">
     <link rel="stylesheet" href="./structure/source/files/css/style.css">
   </head>
   <body>
@@ -105,7 +106,7 @@
    <!-- END of h1-message section -->
 
    <!-- BEGIN of 3 cards-lead -->
-    <section class="ftco-section services-section bg-light">
+    <section class="ftco-section services-section bg-light" id="lead-area">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate" onclick="location.href ='./structure/view/routerDestinations.html'" id="lead-destination">
@@ -152,6 +153,13 @@
 				Destinos especialmente preparados pela Getaway.<br> 
 				Escolha um destino e venha curtir com a gente! 
 			</h5>
+			<span 
+				id="see-more" 
+				class="text-center"
+				onclick="location.href='./structure/view/routerDestinations.html'"
+			> 
+				--> Ver todos os destinos <-- 
+			</span>
           </div>
         </div>    		
     	</div>
@@ -190,7 +198,7 @@
     					</div>
     				</div>
     			</div>
-    			<div class="col-sm col-md-6 col-lg-4 ftco-animate clickable" onclick="location.href ='./structure/view/destinations/2.html'">
+    			<div class="col-sm col-md-6 col-lg-4 ftco-animate clickable route-item" onclick="location.href ='./structure/view/destinations/2.html'">
     				<div class="destination">
     					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(./structure/source/files/images/lencoisMaranhenses.jpg);">
     						<div class="icon d-flex justify-content-center align-items-center">
@@ -295,9 +303,8 @@
     				</div>
 				</div> 
 			 	-->
-				
-    		</div>
-    	</div>
+			</div>
+		</div>
 	</section>
 	<!-- END of our-routes -->
     
