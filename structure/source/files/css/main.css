@@ -93,3 +93,26 @@
       white-space: nowrap;
     }
   }
+
+  @media screen and (min-width: 200px) and (max-width: 500px) {
+    #lead-area, .route-item {
+      display: none !important;
+    }
+
+    #ftco-navbar, navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake {
+       height: 20%; 
+    }
+
+    #see-more {
+        display: block;
+        color: white;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+  }
+
+  @media screen and (min-width: 501px) {
+    #see-more { display: none; }
+  }
