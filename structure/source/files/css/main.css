@@ -1,3 +1,7 @@
+#bloggerAreaBg {
+    background-image: linear-gradient(to bottom right, #007f92, silver);
+}
+
 #destinationsLinksArea {
     margin-top: 10%;
     width: 100% !important;
@@ -95,12 +99,30 @@
   }
 
   @media screen and (min-width: 200px) and (max-width: 500px) {
+    
+    .blogsection-mobile {
+        display: none !important;
+    }
+
+    .col-md-3.d-flex.ftco-animate.blogsection-mobile-item {
+        display: none !important;
+    }
+
+    #ftco-navbar, navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake {
+        height: 20%; 
+     }
+    
     #lead-area, .route-item {
       display: none !important;
     }
 
-    #ftco-navbar, navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake {
-       height: 20%; 
+    #more-blogger {
+        display: block;
+        color: black;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        text-decoration: underline;
     }
 
     #see-more {
@@ -111,8 +133,10 @@
         padding-bottom: 5px;
         text-decoration: underline;
     }
+
   }
 
   @media screen and (min-width: 501px) {
     #see-more { display: none; }
+    #more-blogger { display: none; }
   }
