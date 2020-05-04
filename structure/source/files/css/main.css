@@ -25,6 +25,19 @@
     height: 100px;
 }
 
+#subscribeNews, 
+#subscribeNews:active, 
+#subscribeNews:hover, 
+#subscribeNews::selection,
+#ssubscribeNews::after {
+    -webkit-appearance: none; 
+    box-shadow: none !important;
+}
+
+#subscribeNews:-webkit-autofill {
+     color: #fff !important; 
+}
+
 #lead-destination, #lead-blogger, #lead-marketplaces{
     cursor: pointer !important;
 }
