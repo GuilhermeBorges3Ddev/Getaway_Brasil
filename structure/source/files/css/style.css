@@ -8340,6 +8340,10 @@ textarea.form-control {
   .ftco-media.text-center .ftco-icon {
     margin: 0 auto; }
 
+.ftco-navbar-light.destiny-nav.scrolled {
+  display: none !important;
+}
+
 .ftco-overflow-hidden {
   overflow: hidden; }
 
