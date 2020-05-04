@@ -8545,6 +8545,15 @@ textarea.form-control {
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0; }
 
+.route-place-description {
+  max-height: 175px !important;
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  text-align: justify;
+}
+
+
+
 #section-counter {
   position: relative;
   z-index: 0; }
