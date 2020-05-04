@@ -8340,6 +8340,10 @@ textarea.form-control {
   .ftco-media.text-center .ftco-icon {
     margin: 0 auto; }
 
+.ftco-navbar-light.destiny-nav.scrolled {
+  display: none !important;
+}
+
 .ftco-overflow-hidden {
   overflow: hidden; }
 
@@ -8540,6 +8544,15 @@ textarea.form-control {
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0; }
+
+.route-place-description {
+  max-height: 175px !important;
+  overflow-y: auto;
+  border: 1px solid lightgray;
+  text-align: justify;
+}
+
+
 
 #section-counter {
   position: relative;

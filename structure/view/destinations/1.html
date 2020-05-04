@@ -31,7 +31,7 @@
 <body>
     
 <!-- BEGIN of navbar -->	
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light destiny-nav" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="../../../index.html">
 		<img src="../../source/files/images/logoTrans.png" width="105" height="105" alt="getaway_logo"/>
@@ -156,9 +156,14 @@
 								<h5 class="mt-3">1 noite na Baía dos Porcos</h5>
 								<hr class="text-dark"/>
 								<h4><i>"O real significado de relaxar"</i></h4>
-								<p>
-									A Baía dos Porcos é conhecida por formar piscinas naturais, mas em algumas delas não é permitida a entrada para evitar a degeneração de corais e espécies marinhas que ali estão. 
-									Quando for visitar a vizinha Praia do Sancho, não deixe também de seguir pela trilha do lado direito que leva à visão panorâmica da Baía dos Porcos e de Dois Irmãos, as ilhotas gêmeas. 
+								<p class="route-place-description">
+									<span class="route-place-description-text">
+										A Baía dos Porcos é conhecida por formar piscinas naturais, mas em algumas delas não é permitida a entrada para evitar a degeneração de corais e espécies marinhas que ali estão. 
+										Quando for visitar a vizinha Praia do Sancho, não deixe também de seguir pela trilha do lado direito que leva à visão panorâmica da Baía dos Porcos e de Dois Irmãos, as ilhotas gêmeas. 
+										As ilhotas gêmeas por sua vez são um par de ilhas de pedra que ascendem do oceano ao lado da Baía do Sancho, da Praia Cacimba do Padre e da Baía dos Porcos. 
+										A formação de rochas gêmeas faz parte de uma rede de rochas que brotam de correntes espumantes e enfeitam a vista da praia. 
+										Tire fotos desses famosos picos posicionados em uma água transparente com o céu azul como pano de fundo.
+									</span>
 								</p>
 							</div>
 						</div>
@@ -208,7 +213,7 @@
 								<h5 class="mt-3">2 noites na "Forte da Vila dos Remédios"</h5>
 								<hr class="text-dark"/>
 								<h4><i>"O mais belo por do sol"</i></h4>
-								<p>
+								<p class="route-place-description">
 									O Forte Nossa Senhora dos Remédios, que fica pertinho da Vila dos Remédios, é um dos melhores lugares para poder apreciar o pôr do sol em Fernando de Noronha.
 									A subida ao local é íngrime, mas ao chegar e descobrir o visual que se tem das ruínas do forte não há como dizer que o esforço não valeu a pena. 
 								</p>
@@ -259,7 +264,7 @@
 								<h5 class="mt-3">3 noites no "Museu do Tubarão"</h5>
 								<hr class="text-dark"/>
 								<h4><i>"A história de Noronha"</i></h4>
-								<p>
+								<p class="route-place-description">
 									O Museu do Tubarão, além de ser um lugar bacana para conhecer mais do modo de vida desse temido peixe, tem uma parte que funciona como restaurante. 
 									No restuaurante, com lindo visual, são servidas moquecas e outros pratos com frutos do mar, mas a atração principal é o bolinho de tubalhau - feito com mandioca e carne de tubarão, esse bolinho é uma das marcas registradas de Noronha. Ele é bem gostoso, por isso vale a pena experimentar.
 								</p>
@@ -296,7 +301,15 @@
 								<input name="phone" required="required" type="text" class="form-control" placeholder="(xx) 9 9999-9999">
 							</div>
 							<div class="form-group">
-								<input name="datetravel" required="required" type="text" id="checkin_date" class="form-control" placeholder="Data de ida">
+								<label>Conte-nos mais:   <i>(Fale sua preferência de datas, tempo de permanência, desejos especiais, estilo de viagem e etc...)</i></label>
+								<textarea 
+									name="message" 
+									required="required" 
+									cols="30"
+									rows="20"
+									class="form-control" 
+									placeholder="">
+								</textarea>
 							</div>
 							<div class="form-group">
 								<label for="exampleFormControlSelect1">Quantidade de acompanhantes:</label>
