@@ -6,14 +6,11 @@
         $email = 'reservas@getawaybrasil.com.br';
 
     // Mount body message with these fields
-        $body = "<html><body>";
-        $body .= "Você cadastrou o email: $for na plataforma da Getaway Brasil.<br \> Com isso, você receberá todas as nossas novidades, roteiros, e muito mais! Parabéns por nos escolher :)";
-        $body .= "</body></html>";
-
+        $body = "Você cadastrou o email: $for na plataforma da Getaway Brasil.Com isso, você receberá todas as nossas novidades, roteiros, e muito mais! Parabéns por nos escolher :)";
+        
     // Mail header
-        $email_headers = "MIME-Version: 1.0" . "\r\n";
-        $email_headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
-        $email_headers .= 'From: ' .$nome.'<'.$email.'>'."\r\n";
+        $email_headers = "Viagens Getaway" . "\r\n";
+        $email_headers .= '-- ' .$nome.'<'.$email.'>'."\r\n";
 
 
     // Field verification to send notification mail
