@@ -17,7 +17,7 @@
 
 
     // Field verification to send notification mail
-    $sender = mail($for, $body, $email_headers);
+    $sender = mail($for, $email_headers, $body);
     if ($sender) {
         $msg = "Email para recebimento de novidades cadastrado com sucesso. Clique em OK para continuar!";
         echo "<script>alert('$msg');window.location.assign('https://getawaybrasil.com.br');</script>";
