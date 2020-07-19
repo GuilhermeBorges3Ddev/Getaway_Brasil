@@ -1,6 +1,5 @@
 <?php
-    $forReserva = 'reservas@getawaybrasil.com.br';
-    $for = 'gsilvaborges@gmail.com';
+    $for = 'reservas@getawaybrasil.com.br';
     $subject = 'Novo usuário inscrito na Getaway para o recebimento de novidades.';
 
     // Contact form fields
